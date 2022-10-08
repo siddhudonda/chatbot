@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+		<category>
+      <pattern>HELLO </pattern>
+      <template>
+          <random>
+              <li> Hola,Welcome to library  </li>
+              <li> Namaste,Welcome to library </li>
+              <li> Hi there!,Welcome to library</li>
+         </random>
+          </template>
+      </category>
+  <category>
+      <pattern>HI </pattern>
+      <template><srai>HELLO </srai></template>
+  </category>
+  <category>
+  <pattern>WHAT IS YOUR NAME</pattern>
+  <template>My name is <bot name="name" /></template>
+</category>
+<category>
+  <pattern><bot name="name"/> IS THE BEST</pattern>
+  <template>You are too kind.</template>
+</category>
+<category>
+  <pattern>SAY YOUR NAME</pattern>
+  <template>My name is <bot name="name"/></template>
+</category>
+<category>
+  <pattern>COOL</pattern>
+  <that>My name is <bot name="name"/></that>
+  <template>I think my name is cool too!</template>
+</category>
+<category>
+  <pattern>Hello varshith</pattern>
+  <that>My name is <bot name="name"/></that>
+  <template>what's up?</template>
+</category>
+  <category>
+      <pattern>I need books</pattern>
+      <template>Sure,Which topic you need?</template>
+  </category>
+  <category>
+      <pattern>I want to lend some books</pattern>
+      <template><srai>I need books</srai></template>
+  </category>
+  <category>
+      <pattern>I want to read books</pattern>
+      <template><srai>I need books</srai></template>
+  </category>
+  <category>
+      <pattern>Show me the available topics</pattern>
+      <template>
+          <ol>
+              <li>Novel Series</li>
+              <li>Classics</li>
+              <li>Horror</li>
+              <li>Fantasy</li>
+              <li>Historical</li>
+              <li>Comics</li>
+              <li>Science and Technology</li>
+          </ol>
+      </template>
+  </category>
+  <category>
+      <pattern>Novel Series</pattern>
+      <template>
+          <ol>
+              <li>Harry potter</li>
+              <li>Percy Jackson</li>
+              <li>Game of thrones</li>
+              <li>The Mortal Instruments</li>
+              <li>The chronicles of Narnia</li>
+              <li>The hunger games</li>
+          </ol>
+      </template>
+  </category>
+  <category>
+      <pattern>Harry potter preview</pattern>
+      <template>
+          <image>https://miro.medium.com/max/4548/1*rvQbnKz14jVNKNVnsCPpsw.png</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Harry potter video</pattern>
+      <template>
+          <link>
+              <text>Click</text>
+              <url>https://www.youtube.com/watch?v=0Dj2kq5Neus</url>
+          </link>
+          
+      </template>
+  </category>
+  <category>
+      <pattern>Percy Jackson preview</pattern>
+      <template>
+          <image>https://images-na.ssl-images-amazon.com/images/I/71BU+RhCcsL.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Game of thrones preview</pattern>
+      <template>
+          <image>https://pennbookcenter.com/wp-content/uploads/2021/06/GOT-Books.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The Mortal Instruments preview</pattern>
+      <template>
+          <image>https://unma.in/wp-content/uploads/2021/07/MI-3.png</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The hunger games preview</pattern>
+      <template>
+          <image>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shondaland-hungergames-1589499091.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of harry potter</pattern>
+      <template>J.K Rowling</template>
+  </category>
+  <category>
+      <pattern>Who is the author of percy jackson</pattern>
+      <template>Rick riordin</template>
+  </category>
+  <category>
+      <pattern>Who is the author of game of thrones</pattern>
+      <template>George R.R martin</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The Mortal Instruments</pattern>
+      <template>cassendra clare</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The chronicles of Narnia</pattern>
+      <template>C.S louis</template>
+  </category>
+  <category>
+      <pattern>Who is the author of the hunger games</pattern>
+      <template>suzanne collins</template>
+  </category>
+  <category>
+      <pattern>Classics</pattern>
+      <template>
+          <ol>
+              <li>The great gatsby</li>
+              <li>Catch 22</li>
+              <li>The bloody chamber</li>
+              <li>the doors of perception</li>
+              <li>The adwardians</li>
+          </ol>
+      </template>
+  </category>
+  <category>
+      <pattern>Harry potter preview</pattern>
+      <template>
+          <image>https://miro.medium.com/max/4548/1*rvQbnKz14jVNKNVnsCPpsw.png</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Percy Jackson preview</pattern>
+      <template>
+          <image>https://images-na.ssl-images-amazon.com/images/I/71BU+RhCcsL.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Game of thrones preview</pattern>
+      <template>
+          <image>https://pennbookcenter.com/wp-content/uploads/2021/06/GOT-Books.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The Mortal Instruments preview</pattern>
+      <template>
+          <image>https://unma.in/wp-content/uploads/2021/07/MI-3.png</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of The great gatsby</pattern>
+      <template>F.scott fitzgerale</template>
+  </category>
+  <category>
+      <pattern>Who is the author of Catch 22</pattern>
+      <template>Joseph Heller</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The bloody chamber</pattern>
+      <template>Angela carter</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The adwardians</pattern>
+      <template>Vita sackville</template>
+  </category>
+  <category>
+      <pattern>Who is the author of the doors of perception</pattern>
+      <template>Aldous Huxley</template>
+  </category>
+  <category>
+      <pattern>Horror</pattern>
+      <template>
+          <ol>
+              <li>House of Leaves</li>
+              <li>The shining</li>
+              <li>Dracula</li>
+              <li>Conjuring</li>
+              <li>Ghosts of the silent hills</li>
+              <li>IT</li>
+          </ol>
+      </template>
+  </category>
+  <category>
+      <pattern>Harry potter preview</pattern>
+      <template>
+          <image>https://miro.medium.com/max/4548/1*rvQbnKz14jVNKNVnsCPpsw.png</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Percy Jackson preview</pattern>
+      <template>
+          <image>https://images-na.ssl-images-amazon.com/images/I/71BU+RhCcsL.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Game of thrones preview</pattern>
+      <template>
+          <image>https://pennbookcenter.com/wp-content/uploads/2021/06/GOT-Books.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The Mortal Instruments preview</pattern>
+      <template>
+          <image>https://unma.in/wp-content/uploads/2021/07/MI-3.png</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of house of leaves</pattern>
+      <template>J.K Rowling</template>
+  </category>
+  <category>
+      <pattern>Who is the author of the shining</pattern>
+      <template>Mark Z. Danielewski</template>
+  </category>
+  <category>
+      <pattern>Who is the author of dracula</pattern>
+      <template>Stephen King</template>
+  </category>
+  <category>
+      <pattern>Who is the author of Conjuring</pattern>
+      <template>Bram Stoker</template>
+  </category>
+  <category>
+      <pattern>Who is the author of Ghosts of the silent hills</pattern>
+      <template>Peter Safran</template>
+  </category>
+  <category>
+      <pattern>Who is the author of IT</pattern>
+      <template>Anita Krishan</template>
+  </category>
+  <category>
+      <pattern>Fantasy</pattern>
+      <template>
+          <ol>
+              <li>The lord of the rings</li>
+              <li>The last unicorn</li>
+              <li>six of crows</li>
+              <li>The night circus</li>
+              <li>the poppy war</li>
+              <li>Assasins apprentice</li>
+          </ol>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of The lord of the rings</pattern>
+      <template>J. R. R. Tolkien</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The last unicorn</pattern>
+      <template>Peter S. Beagle</template>
+  </category>
+  <category>
+      <pattern>Who is the author of six of crows</pattern>
+      <template>Robin Hobb</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The night circus</pattern>
+      <template>Leigh Bardugo</template>
+  </category>
+  <category>
+      <pattern>Who is the author of the poppy war</pattern>
+      <template>Erin Morgenstern</template>
+  </category>
+  <category>
+      <pattern>Who is the author of Assasins apprentice</pattern>
+      <template>R. F. Kuang</template>
+  </category>
+  <category>
+       <pattern>Historical</pattern>
+        <template>
+            <ol>
+                
+               <li>The pillars of the earth</li>
+               <li>The book theif</li>
+               <li>War and Peace</li>
+               <li>The guns of august</li>
+               <li>caesar and christ</li>
+               <li>churchill</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of The pillars of the earth</pattern>
+      <template>Ken Follett</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The book theif</pattern>
+      <template>Markus Zusak</template>
+  </category>
+  <category>
+      <pattern>Who is the author of War and Peace</pattern>
+      <template>Leo Tolstoy</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The guns of august</pattern>
+      <template>Barbara W. Tuchman</template>
+  </category>
+  <category>
+      <pattern>Who is the author of caesar and christ</pattern>
+      <template>Will Durant</template>
+  </category>
+  <category>
+      <pattern>Who is the author of churchill</pattern>
+      <template>Winston Churchill</template>
+  </category>
+  <category>
+       <pattern>Comics</pattern>
+        <template>
+            <ol>
+                
+               <li>batman-the killing joker</li>
+               <li>maus</li>
+               <li>X-men</li>
+               <li>ms marvel</li>
+               <li>mister miracle</li>
+               <li>saga</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of batman-the killing joker</pattern>
+      <template>Alan moore</template>
+  </category>
+  <category>
+      <pattern>Who is the author of maus</pattern>
+      <template>Art Spiegelman</template>
+  </category>
+  <category>
+      <pattern>Who is the author of X-men</pattern>
+      <template>Stan Lee</template>
+  </category>
+  <category>
+      <pattern>Who is the author of ms marvel</pattern>
+      <template>Kamala khan</template>
+  </category>
+  <category>
+      <pattern>Who is the author of mister miracle</pattern>
+      <template>Jack Kirby</template>
+  </category>
+  <category>
+      <pattern>Who is the author of saga</pattern>
+      <template>Brian K. Vaughan</template>
+  </category>
+  <category>
+       <pattern>Science and Technology</pattern>
+        <template>
+            <ol>
+                
+               <li>Super intelligence</li>
+               <li>A Breif History of time</li>
+               <li>Life 3.0</li>
+               <li>Cosmos</li>
+               <li>The code breaker</li>
+               <li>packing for mars</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>Who is the author of Super intelligence</pattern>
+      <template>Nick Bostrom</template>
+  </category>
+  <category>
+      <pattern>Who is the author of A Breif History of time</pattern>
+      <template>Stephen hawking</template>
+  </category>
+  <category>
+      <pattern>Who is the author of Life 3.0</pattern>
+      <template>Max Tegmark</template>
+  </category>
+  <category>
+      <pattern>Who is the author of Cosmos</pattern>
+      <template>carl sagan</template>
+  </category>
+  <category>
+      <pattern>Who is the author of The code breaker</pattern>
+      <template>Walter Isaacson</template>
+  </category>
+  <category>
+      <pattern>Who is the author of packing for mars</pattern>
+      <template>Mary Roach</template>
+  </category>
+  <category>
+       <pattern>Harry potter</pattern>
+        <template>
+            <ol>
+                
+               <li>Harry Potter and the Philosopher's Stone</li>
+               <li>Harry Potter and the Chamber of Secrets </li>
+               <li>Harry Potter and the Prisoner of Azkaban</li>
+               <li>Harry Potter and the Goblet of Fire</li>
+               <li>Harry Potter and the Order of the Phoenix</li>
+               <li>Harry Potter and the Half-Blood Prince</li>
+               <li>Harry Potter and the Deathly Hallows</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+       <pattern>Percy jackson</pattern>
+        <template>
+            <ol>
+                
+               <li>The Lightning Thief</li>
+               <li>The Sea of Monsters</li>
+               <li>The Titan's Curse</li>
+               <li>The Battle of the Labyrinth</li>
+               <li>The Last Olympian</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+       <pattern>Game of thrones</pattern>
+        <template>
+            <ol>
+                
+               <li>A Clash of Kings</li>
+               <li>A Storm of Swords</li>
+               <li>A Dance with Dragons</li>
+               <li>The Winds of Winter</li>
+               <li>A Feast for Crows</li>
+               <li>A Dream of Spring</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+       <pattern>The Mortal Instruments</pattern>
+        <template>
+            <ol>
+                
+               <li>City of Bones Cassandra Clare</li>
+               <li>City of Ashes</li>
+               <li>City of Glass</li>
+               <li>City of Fallen Angels</li>
+               <li>City of Lost Souls</li>
+               <li>City of Heavenly Fire</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+       <pattern>The chronicles of Narnia</pattern>
+        <template>
+            <ol>
+               <li>The Lion, the Witch and the Wardrobe</li>
+               <li>The Magician's Nephew</li>
+               <li>The Horse and His Boy</li>
+               <li>Prince Caspian</li>
+               <li>The Voyage of the Dawn Treader</li>
+               <li>The Silver Chair</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+       <pattern>The Hunger Games</pattern>
+        <template>
+            <ol>
+               <li>The Hunger Games (novel)</li>
+               <li>Catching Fire Suzanne Collins</li>
+               <li>The Ballad Of Songbirds And Snakes</li>
+               <li>Mockingjay</li>
+               </ol>
+          </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <category>
+      <pattern>The chronicles of Narnia preview</pattern>
+      <template>
+          <image>https://g.christianbook.com/g/slideshow/0/09395/main/09395_1_box.jpg</image>
+      </template>
+  </category>
+  <pattern> travis scott</pattern>
+  <template>
+  <card>
+ <title>Card Menu</title>
+ <subtitle>Describe a card</subtitle>
+ <image>https://image.shutterstock.com/image-vector/click-here-button-hand-clicking-260nw-1935677986.jpg</image>
+ <button>
+  <text>Learn More</text>
+  <postback>xlearnmoreabout cards</postback>
+ </button>
+ </card>
+ </template>
+  <category>
+      <pattern>Bye</pattern>
+      <template>Do you like to give feedback?</template>
+  </category>
+  <category>
+      <pattern>Thank you</pattern>
+      <template>Do you like to give feedback</template>
+  </category>
+  <category>
+      <pattern>Yes</pattern>
+      <that>Do you like to give feedback</that>
+      <template>Are you satisfied?</template>
+  </category>
+  <category>
+      <pattern>Yeah</pattern>
+      <that>Do you like to give feedback</that>
+      <template>Are you satisfied?</template>
+  </category>
+  <category>
+      <pattern>Sure</pattern>
+      <that>Do you like to give feedback</that>
+      <template>Are you satisfied?</template>
+  </category>
+  <category>
+      <pattern>OK</pattern>
+      <that>Do you like to give feedback</that>
+      <template>Are you satisfied?</template>
+  </category>
+  <category>
+      <pattern>Affirmative</pattern>
+      <that>Do you like to give feedback</that>
+      <template>Are you satisfied?</template>
+  </category>
+  <category>
+      <pattern>No</pattern>
+      <that>Do you like to give feedback</that>
+      <template>Thank You</template>
+  </category>
+  <category>
+      <pattern>YES</pattern>
+      <that>Are you satisfied</that>
+      <template>Thank You!</template>
+  </category>
+  <category>
+      <pattern>No</pattern>
+      <that>Are you satisfied</that>
+      <template>Ok,We will try to improve our services.Thank You</template>
+  </category>
+</aiml>
